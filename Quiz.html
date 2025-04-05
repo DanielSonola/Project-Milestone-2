@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Self-Assessment Quiz</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<!-- Above is all of the metadata and this is also where the title of my website is and where I like my css page  -->
+<body>
+  <header>
+    <h1>The Evolution of the Web</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="topic1.html">The Evolution of HTTP</a></li>
+        <li><a href="topic2.html">The Impact of HTTP on Web Development</a></li>
+        <li><a href="Quiz.html">Self-Assessment Quiz</a></li>
+        <li><a href="references.html">References</a></li>
+      </ul>
+    </nav>
+  </header>
+<!-- Above is my header section this is where you will acutual be able to see my title of my website and the links to the other pages -->
+  <main>
+    <section>
+      <h2>Self-Assessment Quiz</h2>
+      <form id="quizForm">
+        <div class="question">
+          <p>1. 1. What year was the World Wide Web invented by Tim Berners-Lee?</p>
+          <label><input type="radio" name="q1" value="a" />1979</label><br/>
+          <label><input type="radio" name="q1" value="b" />1989</label><br/>
+          <label><input type="radio" name="q1" value="c" />1995</label>
+        </div>
+
+        <div class="question">
+          <p>2. Which of these was NOT one of the three original components of the Web?</p>
+          <label><input type="radio" name="q2" value="a" /> URLs</label><br/>
+          <label><input type="radio" name="q2" value="b" /> HTML</label><br/>
+          <label><input type="radio" name="q2" value="c" /> JavaScript</label>
+        </div>
+
+        <div class="question">
+          <p>3. Which version of HTTP introduced persistent connections?</p>
+          <label><input type="radio" name="q3" value="a" /> HTTP/1.0</label><br/>
+          <label><input type="radio" name="q3" value="b" /> HTTP/1.1</label><br/>
+          <label><input type="radio" name="q3" value="c" /> HTTP/2</label>
+        </div>
+
+        <div class="question">
+          <p>4. Fill in the blank: HTTP is a _________ protocol.</p>
+          <input type="text" name="q4" />
+        </div>
+
+        <div class="question">
+          <p>5. Which of the following are secure versions of HTTP? (Select all that apply)</p>
+          <label><input type="checkbox" name="q5" value="a" /> HTTPS</label><br/>
+          <label><input type="checkbox" name="q5" value="b" /> HTTP/2</label><br/>
+          <label><input type="checkbox" name="q5" value="c" /> FTP</label><br/>
+          <label><input type="checkbox" name="q5" value="d" /> S-HTTP</label>
+        </div>
+
+        <button type="button" onclick="checkAnswers()">Submit</button>
+        <button type="button" onclick="resetQuiz()">Restart</button>
+      </form>
+
+      <div id="results" class="hidden"></div>
+    </section>
+  </main>
+<!-- Above is is all of the formating for the quiz and it connects to the js code -->
+  <footer>
+    <p>&copy; 2025 Daniel Sonola</p>
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
