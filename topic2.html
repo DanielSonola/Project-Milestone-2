@@ -1,52 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Impact of HTTP on Web Development</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Impact of HTTP on Web Development</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<!-- Above is all of the metadata and this is also where the title of my website is and where I like my css page  -->
 <body>
-    <header>
-        <h1>The Evolution of the Web</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="topic1.html">The Evolution of HTTP</a></li>
-                <li><a href="topic2.html">The Impact of HTTP on Web Development</a></li>
-                <li><a href="Quiz.html">Self-Assessment Quiz</a></li>
-                <li><a href="references.html">References</a></li>
-            </ul>
-        </nav>
-    </header>
-<!-- Above is my header section this is where you will acutual be able to see my title of my website and the links to the other pages -->
-    <main>
-        <section>
-            <h2>The Impact of HTTP on Web Development</h2>
-            <p>The impact of HTTP on Web Development content.</p>
-            <ul>
-                <li>Sub topic</li>
-                <li>Sub topic</li>
-                <li>Sub topic</li>
-            </ul>
-            <table>
-                <tr>
-                    <th>Table 1</th>
-                    <th>Table 2</th>
-                </tr>
-                <tr>
-                    <td>Data 1</td>
-                    <td>Data 2</td>
-                </tr>
-            </table>
-        </section>
-    </main>
-<!--Above is the main section this is where you will be able to see all of the main content for The impact of HTTP on
-web development-->
-    <footer>
-        <p>&copy; 2025 Daniel Sonola</p>
-    </footer>
+<header>
+     <!-- Header and Navigation Bar-->
+  <h1>The Evolution of the Web</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="topic1.html">The Evolution of HTTP</a></li>
+      <li><a href="topic2.html">The Impact of HTTP on Web Development</a></li>
+      <li><a href="quiz.html">Self-Assessment Quiz</a></li>
+      <li><a href="references.html">References</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+    <!-- Impact of HTTP -->
+  <section>
+    <h2>The Impact of HTTP on Web Development</h2>
+    <!-- Major Impacts -->
+    <h3>1. Simplified Server-Side Logic</h3>
+    <p>Because HTTP is stateless, servers don’t need to retain information between requests. This simplicity enabled early web frameworks and scaled easily across multiple servers.</p>
+
+    <h3>2. Performance Enhancements</h3>
+    <p>Persistent connections in HTTP 1.1 reduced TCP handshake overhead, while HTTP/2’s multiplexing and header compression cut page load times by up to 30% in benchmarks, enabling richer web applications.</p>
+
+    <h3>3. Improved Developer Workflow</h3>
+    <p>With clear status codes and headers, debugging and testing became straightforward. RESTful APIs, which rely on HTTP verbs and codes, revolutionized backend-frontend communication.</p>
+
+    <h3>4. Security by Default</h3>
+    <p>Modern HTTP versions (especially HTTP/3) enforce encryption over TLS/SSL. This shifted HTTPS from optional to standard, protecting user data and building trust on e-commerce and banking sites.</p>
+
+    <h3>5. Real-World Use Cases</h3>
+    <ul>
+      <li>​<strong>Single-Page Applications:</strong> Rely on HTTP/2 server-push to preload assets.</li>
+      <li>​<strong>Streaming & IoT:</strong> QUIC’s fast reconnection benefits media players and mobile devices.</li>
+      <li>​<strong>APIs & Microservices:</strong> REST and GraphQL operate on top of HTTP to exchange JSON-based data.</li>
+    </ul>
+    <!-- Impact Comparison Table -->
+    <h3>Impact Comparison</h3>
+    <table>
+      <tr>
+        <th>Feature</th>
+        <th>Benefit</th>
+      </tr>
+      <tr>
+        <td>Stateless Protocol</td>
+        <td>Easy scalability</td>
+      </tr>
+      <tr>
+        <td>Persistent Connections</td>
+        <td>Faster page loads</td>
+      </tr>
+      <tr>
+        <td>Multiplexing</td>
+        <td>Reduced latency</td>
+      </tr>
+      <tr>
+        <td>Header Compression</td>
+        <td>Lower bandwidth use</td>
+      </tr>
+      <tr>
+        <td>Built-in Encryption</td>
+        <td>Enhanced security</td>
+      </tr>
+    </table>
+  </section>
+</main>
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Daniel Sonola</p>
+</footer>
 </body>
 </html>
-<!--These are just the closing brackets for html and body. Also the footer has my name-->
